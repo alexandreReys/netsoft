@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "12.19.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "prod": "node dist/api.bundle.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cloudinary": "^1.23.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "expo-server-sdk": "^3.6.0",
+    "express": "^4.17.1",
+    "google-drive-image-upload": "^1.0.2",
+    "googleapis": "39",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.6.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
