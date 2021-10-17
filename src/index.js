@@ -1,5 +1,6 @@
 require("dotenv").config();
 const express = require("express");
+const morgan = require("morgan");
 const router = require("./router/routes");
 const cors = require("cors");
 
@@ -7,6 +8,7 @@ const app = express();
 
 // app.disable('etag');  // http response 304 => 200
 
+app.use(morgan('dev'));
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));
 app.use(cors());

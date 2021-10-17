@@ -6,6 +6,7 @@ const morgan = require("morgan");
 const adminAuthentication = require('../middlewares/adminAuth');
 
 const settingsRouter = require("./settingsRouter");
+const productsRouter = require("./productsRouter");
 
 const router = Router();
 
@@ -27,5 +28,6 @@ router.get("/", (req, res) => {
 
 router.post("/auth", adminAuthentication);
 router.use("/settings", settingsRouter);
+router.use("/products", productsRouter);
 
 module.exports = router;
